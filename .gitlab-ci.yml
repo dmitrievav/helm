@@ -1,0 +1,29 @@
+image: registry.gitlab.salondev.net/kuber-infra/k8s-deploy
+variables:
+  #DOCKER_DRIVER: overlay
+  #CI_REGISTRY: registry.example.com
+  #CI_REGISTRY_IMAGE: $CI_REGISTRY/$CI_PROJECT_PATH
+
+before_script:
+  - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
+
+stages:
+  - build
+
+pages:
+  stage: build
+  script:
+    - mkdir -p public
+    - helm init --client-only
+    - helm version --client
+    - helm package . -d public
+    - cd public
+    - helm repo index . --url https://kuber-infra.pages.salondev.net/helmchart
+    - cat index.yaml
+  artifacts:
+    paths:
+    - public
+  only:
+    - master
+  tags:
+    - docker
