@@ -18,7 +18,7 @@ pages:
     - helm version --client
     - helm package . -d public
     - cd public
-    - helm repo index . --url https://kuber-infra.pages.salondev.net/helmchart
+    - helm repo index . --url https://dmitrievav.github.io/helmchart
     - cat index.yaml
   artifacts:
     paths:
