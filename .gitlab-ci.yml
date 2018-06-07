@@ -1,6 +1,8 @@
 image: registry.gitlab.salondev.net/kuber-infra/k8s-deploy
+services:
+  - docker:dind
 variables:
-  #DOCKER_DRIVER: overlay
+  DOCKER_DRIVER: overlay
   #CI_REGISTRY: registry.example.com
   #CI_REGISTRY_IMAGE: $CI_REGISTRY/$CI_PROJECT_PATH
 
@@ -25,5 +27,3 @@ pages:
     - public
   only:
     - master
-  tags:
-    - docker
