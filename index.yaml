@@ -3,11 +3,11 @@ entries:
   helmchart:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-06T21:01:25.283712739+02:00
+    created: 2018-06-16T10:17:56.576035653+02:00
     description: A Helm chart for Kubernetes
-    digest: 091e0fc2aa1fc132e2b7ee6274eefbf37e8cbb5e9bd35d66b06fe38602a6024e
+    digest: dcef083f33f199c36ada035cc1a6ee41395611a06778dd4f5e7578a21caf95f6
     name: helmchart
     urls:
     - https://dmitrievav.github.io/helmchart/public/helmchart-0.1.0.tgz
     version: 0.1.0
-generated: 2018-06-06T21:01:25.282820649+02:00
+generated: 2018-06-16T10:17:56.574527193+02:00

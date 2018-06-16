@@ -17,6 +17,8 @@ image:
   secrets:
     - name: gitlab-registry
 
+containerPort: 80
+
 service:
   type: ClusterIP
   port: 80
