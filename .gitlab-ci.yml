@@ -1,4 +1,4 @@
-image: registry.gitlab.salondev.net/kuber-infra/k8s-deploy
+image: registry.gitlab.example.com/kuber-infra/k8s-deploy
 services:
   - docker:dind
 variables:
@@ -15,15 +15,15 @@ stages:
 pages:
   stage: build
   script:
-    - mkdir -p public
+    - mkdir -p charts
     - helm init --client-only
     - helm version --client
-    - helm package . -d public
-    - cd public
-    - helm repo index . --url https://dmitrievav.github.io/helmchart
+    - helm package . -d charts
+    - cd charts
+    - helm repo index . --url https://dmitrievav.github.io/helmcharts
     - cat index.yaml
   artifacts:
     paths:
-    - public
+    - charts
   only:
     - master
