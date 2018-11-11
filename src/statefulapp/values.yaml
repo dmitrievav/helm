@@ -12,8 +12,8 @@ replicaCount: 1
 image:
   repository: nginx
   tag: stable
-  pullPolicy: IfNotPresent
-  #pullPolicy: Always
+  #pullPolicy: IfNotPresent
+  pullPolicy: Always
   secrets:
     - name: gitlab-registry
 

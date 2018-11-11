@@ -3,9 +3,9 @@ entries:
   simpleapp:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-11-11T09:19:29.036137115-05:00
+    created: 2018-11-11T11:26:28.507447134-05:00
     description: A simple app deployment for Kubernetes
-    digest: 1b92d9676e213f06161f05f5184aa4ec056c9904f323d5cfcae9d661d5063ce9
+    digest: 6cf73c6cd9ecf2ddcbc85cfc0ddea7e1c81dbd7abc5e671026f1b825cf1a4fb8
     name: simpleapp
     urls:
     - https://dmitrievav.github.io/helm/charts/simpleapp-0.1.0.tgz
@@ -13,11 +13,11 @@ entries:
   statefulapp:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-11-11T09:19:29.03632655-05:00
+    created: 2018-11-11T11:26:28.507639204-05:00
     description: A stateful app deployment for Kubernetes
-    digest: 4fef60b7f5310ea304ec474f0153109c66b6db0d790a8f6d5ddb7b372397d2f4
+    digest: 3de1f20cc0f4994d5a65989b1894078d0106e77ba260d085014e71e085af0c63
     name: statefulapp
     urls:
     - https://dmitrievav.github.io/helm/charts/statefulapp-0.1.0.tgz
     version: 0.1.0
-generated: 2018-11-11T09:19:29.035822235-05:00
+generated: 2018-11-11T11:26:28.507023488-05:00
